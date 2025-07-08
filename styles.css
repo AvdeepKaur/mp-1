@@ -1,0 +1,433 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #26232E;
+  background-color: #FFEAEE;
+  min-height: 100vh;
+}
+
+/* Shared width and centering for header, container, and footer */
+header,
+.container,
+footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Header Styles */
+header {
+  background-color: #95A78D;
+  color: #ffffff;
+  padding: 3vw 2vw;
+  margin-bottom: 2vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(38, 35, 46, 0.2);
+  text-align: left;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: calc(1.8rem + 1vw);
+  margin-bottom: 1vh;
+}
+
+header p {
+  font-weight: 300;
+  font-size: calc(1rem + 0.2vw);
+  opacity: 0.9;
+}
+
+/* Container for Nav + Main Side-by-Side */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2vw;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #8E8DBE;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(142, 141, 190, 0.3);
+  padding: 2vw 1vw;
+  width: 28vw;
+  min-width: 190px;
+  max-width: 30vw;
+  margin-bottom: 2vh;
+  height: fit-content;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav li {
+  margin-bottom: 1vh;
+  display: block;
+}
+
+nav a {
+  color: #FFEAEE;
+  text-decoration: none;
+  padding: 1vw 2vw;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: calc(0.9rem + 0.1vw);
+  display: block;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover {
+  background-color: #26232E;
+  box-shadow: 0 4px 8px rgba(38, 35, 46, 0.3);
+}
+
+/* Main Content Styles */
+main {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(38, 35, 46, 0.1);
+  border: 1px solid #ECB8A5;
+  padding: 3vw;
+  min-height: 100vh;
+  width: 70vw;
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
+  text-align: left;
+  display: block;
+}
+
+main h2 {
+  color: #26232E;
+  margin-bottom: 2vh;
+  font-size: calc(1.4rem + 0.3vw);
+  font-weight: 600;
+  border-bottom: 2px solid #95A78D;
+  padding-bottom: 1vh;
+}
+
+main p {
+  margin-bottom: 2vh;
+  font-size: calc(1rem + 0.1vw);
+  line-height: 1.8;
+}
+
+main ul {
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+}
+
+main li {
+  margin-bottom: 1vh;
+  font-size: calc(0.95rem + 0.1vw);
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2vh 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main a {
+  color: #95A78D;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #26232E;
+}
+
+main section {
+  margin-bottom: 3vh;
+}
+
+main strong {
+  color: #26232E;
+  font-weight: 600;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #26232E;
+  color: #FFEAEE;
+  text-align: center;
+  padding: 2vw;
+  margin-top: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(38, 35, 46, 0.2);
+}
+
+footer p {
+  font-size: calc(0.9rem + 0.1vw);
+  margin: 0;
+}
+
+footer a {
+  color: #95A78D;
+  text-decoration: none;
+  margin-left: 0.5vw;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ECB8A5;
+}
+
+/* Calculator Styles */
+.calculator-container {
+  background-color: #ECB8A5;
+  padding: 3vw;
+  border-radius: 12px;
+  margin-top: 3vh;
+  box-shadow: 0 6px 20px rgba(236, 184, 165, 0.3);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #95A78D;
+}
+
+.calculator-container h3 {
+  text-align: center;
+  color: #26232E;
+  margin-bottom: 2vh;
+  font-size: calc(1.2rem + 0.2vw);
+}
+
+.calculator-inputs {
+  display: block;
+  margin-bottom: 2vh;
+}
+
+.calculator-inputs input {
+  padding: 1vw;
+  border: 2px solid #95A78D;
+  border-radius: 6px;
+  font-size: calc(1rem + 0.1vw);
+  background-color: white;
+  color: #26232E;
+  display: block;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.calculator-inputs input:focus {
+  outline: none;
+  border-color: #26232E;
+  box-shadow: 0 0 0 3px rgba(149, 167, 141, 0.2);
+}
+
+.calculator-buttons {
+  display: block;
+  margin-bottom: 2vh;
+}
+
+.calculator-buttons button {
+  padding: 1vw;
+  border: none;
+  border-radius: 6px;
+  font-size: calc(1rem + 0.1vw);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #95A78D;
+  color: #FFEAEE;
+  box-shadow: 0 2px 4px rgba(149, 167, 141, 0.3);
+  margin-right: 1vw;
+  margin-bottom: 1vh;
+  display: inline-block;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.calculator-buttons button:hover {
+  background-color: #26232E;
+  box-shadow: 0 4px 8px rgba(38, 35, 46, 0.3);
+}
+
+.clear-button {
+  background-color: #8E8DBE !important;
+}
+
+.clear-button:hover {
+  background-color: #26232E !important;
+}
+
+.calculator-output {
+  background-color: white;
+  padding: 1vw;
+  border-radius: 6px;
+  border: 2px solid #95A78D;
+  min-height: 50px;
+  font-size: calc(1.1rem + 0.1vw);
+  font-weight: 600;
+  color: #26232E;
+  text-align: center;
+}
+
+.negative-result {
+  color: #26232E !important;
+  background-color: rgb(240, 79, 108) !important;
+  border-color: #8E8DBE !important;
+}
+
+/* Responsive Layouts */
+
+/* For screens 1000px and up */
+@media screen and (min-width: 1000px) {
+  header,
+  .container,
+  footer {
+    max-width: 1200px;
+  }
+  .container {
+    gap: 2vw;
+  }
+  nav {
+    width: 28vw;
+    max-width: 30vw;
+  }
+  main {
+    max-width: 70vw;
+    width: 70vw;
+  }
+  .calculator-container {
+    max-width: 500px;
+  }
+}
+
+/* For screens 750px–999px */
+@media screen and (min-width: 750px) and (max-width: 999px) {
+  header,
+  .container,
+  footer {
+    max-width: 100vw;
+  }
+  .container {
+    gap: 2vw;
+  }
+  nav {
+    width: 28vw;
+    max-width: 30vw;
+  }
+  main {
+    max-width: 70vw;
+    width: 70vw;
+  }
+}
+
+/* For screens smaller than 750px: stack nav and main vertically */
+@media screen and (max-width: 749px) {
+  header,
+  .container,
+  footer {
+    max-width: 100vw;
+  }
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav, main {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  nav {
+    margin-bottom: 2vh;
+  }
+  header {
+    text-align: center;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+  }
+  nav a {
+    display: block;
+    padding: 0.5vw 1vw;
+    font-size: calc(0.8rem + 0.1vw);
+  }
+  main {
+    max-width: 100vw;
+    padding: 2vw;
+  }
+  .calculator-container {
+    padding: 2vw;
+  }
+  .calculator-buttons button {
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+  }
+}
+
+/* For screens smaller than 500px */
+@media screen and (max-width: 499px) {
+  header,
+  .container,
+  footer {
+    max-width: 100vw;
+  }
+  header {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  nav {
+    padding: 1vw;
+  }
+  nav a {
+    padding: 0.5vw 0.75vw;
+    font-size: calc(0.7rem + 0.1vw);
+  }
+  main {
+    padding: 1vw;
+  }
+  .calculator-container {
+    padding: 1vw;
+  }
+  .calculator-buttons button {
+    padding: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+  }
+}
+
+/* Extra small typography adjustments */
+@media screen and (max-width: 375px) {
+  header h1 {
+    font-size: calc(1.5rem + 0.5vw);
+  }
+  header p {
+    font-size: calc(0.9rem + 0.1vw);
+  }
+  main h2 {
+    font-size: calc(1.2rem + 0.2vw);
+  }
+}
